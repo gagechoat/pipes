@@ -3,8 +3,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'pipes-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styles: [`
+    .pipes {
+      margin: 32px;
+      padding: 32px;
+    }
+  `]
 })
 export class AppComponent {
-  title = 'pipes works!';
+  myValue = 'lowercase';
+  myDate = new Date(2016,5,24);
 }
